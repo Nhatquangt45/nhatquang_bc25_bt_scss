@@ -1,0 +1,46 @@
+#carousel {
+  .background__top {
+    top: 0;
+    @include bgTopBot(absolute);
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+  }
+  .background__bot {
+    bottom: 0;
+    @include bgTopBot(relative);
+    img {
+      @include tagImg();
+    }
+  }
+}
+.carou__sel {
+  position: relative;
+  z-index: 3;
+}
+
+.row {
+  .about__left {
+    margin: 10rem 0;
+    h6 {
+      color: $color-about-us;
+    }
+    h1 {
+      font-size: $fs-6;
+      font-weight: $fw-3;
+    }
+  }
+
+  .about__right {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: block;
+    }
+  }
+}

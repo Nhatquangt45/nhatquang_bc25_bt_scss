@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__menu {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+
+.logo {
+  position: absolute;
+  order: 0;
+  top: 0;
+  left: 0;
+}
+
+.crest {
+  object-fit: cover;
+  width: 80px;
+}
+
+.nav-item {
+  padding-right: 35px;
+}
+
+.nav-item .nav-link {
+  color: #121212;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  display: block;
+  height: 2px;
+  transition: all 1s;
+}
+
+.nav-item .nav-link:hover {
+  color: #b61984 !important;
+}
+
+.nav-item .nav-link:hover::after {
+  background-color: #b61984;
+  width: 100%;
+}
+
+.button__1 {
+  border: none;
+  border-radius: 30px;
+  height: 45px;
+  background-color: #b61984;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  color: #f5f9fe;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.button__1 i {
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+.call__phone {
+  padding: 10px;
+}
+
+.icon {
+  padding-left: 10px;
+}
+
+.icon a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.icon a i {
+  font-size: 13px;
+}
+
+#carousel .background__top {
+  top: 0;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  right: 0;
+}
+
+#carousel .background__top img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+#carousel .background__bot {
+  bottom: 0;
+  position: relative;
+  left: 0;
+  pointer-events: none;
+  right: 0;
+}
+
+#carousel .background__bot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  object-fit: cover;
+}
+
+.carou__sel {
+  position: relative;
+  z-index: 3;
+}
+
+.row .about__left {
+  margin: 10rem 0;
+}
+
+.row .about__left h6 {
+  color: #b61984;
+}
+
+.row .about__left h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.row .about__right img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+#activies {
+  background-color: #dcd1f3;
+  position: relative;
+  width: 100%;
+  padding: 0 8%;
+}
+
+#activies .acti__bot {
+  position: relative;
+  z-index: 3;
+}
+
+#activies .background__find {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  right: 0;
+}
+
+#activies .background__find img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  object-fit: cover;
+}
+
+.col-md-3 .card {
+  border: none;
+  border-radius: 14px;
+  margin: 2rem 10px;
+  transition: all 1.5s;
+}
+
+.col-md-3 .card:hover {
+  box-shadow: 0px 10px 24px 6px grey;
+  transform: scale3d(1.1);
+}
+
+.col-md-3 .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 1s;
+}
+
+.col-md-3 .card .card-body {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#contact {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.form-group {
+  margin: 30px 0;
+}
+
+.message {
+  padding: 1em 2.5em 7.5em !important;
+  height: 150px;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+
+.email__mess {
+  align-items: center;
+  justify-content: center;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.contact__name span input {
+  border-radius: 20px;
+  padding: 10px 30px;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.contact__email span input {
+  border-radius: 20px;
+  padding: 10px 30px;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.form-control {
+  width: 85%;
+  border-radius: 30px;
+  padding: 0px 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user i {
+  position: absolute;
+  left: 30;
+  /* bottom: 15px; */
+  top: 16.5%;
+  z-index: 3;
+  left: 7%;
+  font-size: 10px;
+  color: #b61984;
+}
+
+.enve i {
+  position: absolute;
+  top: 16.4%;
+  right: 46%;
+  z-index: 3;
+  font-size: 13px;
+  color: #b61984;
+}
+
+.contact__left {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  object-fit: cover;
+}
+
+.contact__right {
+  position: relative;
+  z-index: 5;
+}
+
+.contact__button {
+  padding: 4rem 0;
+}
+
+.button__send {
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 30px;
+  font-family: cursive;
+  font-weight: 600;
+  background-color: #b61984;
+  color: #f5f9fe;
+}
+
+.icon__english i {
+  position: absolute;
+  top: 29%;
+  left: 8%;
+  font-size: 13px;
+  color: #b61984;
+}
+
+.icon__mess i {
+  position: absolute;
+  top: 42%;
+  font-size: 13px;
+  left: 9%;
+  color: #b61984;
+}
+
+.card__contact {
+  box-shadow: 5px 5px 4px 5px grey;
+  border-radius: 20px;
+}
+
+.contact__bot {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  right: 0;
+  bottom: 0;
+}
+
+.contact__bot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  object-fit: cover;
+}
+
+#footer {
+  background-image: url(./../../images/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7em 0 9em 0;
+}
+
+.footer__content {
+  display: flex;
+  color: #f5f9fe;
+  font-family: cursive;
+  line-height: 3;
+  font-size: 14px;
+}
+
+.double__button {
+  display: grid;
+  gap: 5px 0;
+}
+
+.icon__footer i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.col-md-3 ul {
+  list-style: none;
+}
+
+.col-md-3 ul li {
+  border-bottom: 1px solid #0000001a;
+}
+
+.button__email {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #0000001a;
+}
+
+.button__sub {
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #0000001a;
+}
+/*# sourceMappingURL=style.css.map */
